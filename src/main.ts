@@ -1,3 +1,5 @@
-export function log(message: string) {
-  console.log(message)
+class Lakera {
+  constructor() {
+    console.log('Lakera');
+  }
 }
