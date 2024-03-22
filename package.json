@@ -11,13 +11,12 @@
         "lint": "tsc",
         "test": "vitest run",
         "ci": "pnpm run lint && pnpm run test && pnpm run build",
-        "release": "pnpm run ci && pnpm changeset publish"
+        "release": "pnpm run ci"
     },
     "keywords": [],
     "author": "Preston Bourne",
     "license": "MIT",
     "devDependencies": {
-        "@changesets/cli": "^2.27.1",
         "@types/node": "^20.11.30",
         "tsup": "^8.0.2",
         "typescript": "^5.4.2"
