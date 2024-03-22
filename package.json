@@ -1,17 +1,17 @@
 {
     "name": "lakera-js",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "private": false,
     "description": "",
-    "main": "./dist/main.js",
-    "types": "./dist/main.d.ts",
+    "main": "./dist/index.js",
+    "types": "./dist/types.d.ts",
     "scripts": {
         "build": "tsup src/** --format cjs,esm --dts",
         "dev": "vitest",
         "lint": "tsc",
         "test": "vitest run",
         "ci": "pnpm run lint && pnpm run test && pnpm run build",
-        "release": "pnpm run ci"
+        "release": "pnpm run ci && pnpm version patch && pnpm publish"
     },
     "keywords": [],
     "author": "Preston Bourne",

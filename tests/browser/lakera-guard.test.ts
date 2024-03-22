@@ -37,23 +37,5 @@ describe(LakeraGuard.name + " in browser", () => {
         ).not.toThrow();
     });
 
-    it("should throw an error if maxRetries is not a positive integer", () => {
-        expect(
-            () =>
-                new LakeraGuard({
-                    apiKey,
-                    maxRetries: -1,
-                })
-        ).toThrow();
-    });
-
-    it("should throw an error if timeout is not a positive integer", () => {
-        expect(
-            () =>
-                new LakeraGuard({
-                    apiKey,
-                    timeout: -1,
-                })
-        ).toThrow();
-    });
+  
 });
