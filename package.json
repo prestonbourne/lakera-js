@@ -6,12 +6,12 @@
     "main": "./dist/main.js",
     "types": "./dist/main.d.ts",
     "scripts": {
-        "build": "tsup src/main.ts --format cjs,esm --dts",
+        "build": "tsup src/** --format cjs,esm --dts",
         "dev": "vitest",
         "lint": "tsc",
         "test": "vitest run",
         "ci": "pnpm run lint && pnpm run test && pnpm run build",
-        "publish": "pnpm run ci && pnpm changeset publish"
+        "release": "pnpm run ci && pnpm changeset publish"
     },
     "keywords": [],
     "author": "Preston Bourne",
