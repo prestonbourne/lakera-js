@@ -1,4 +1,4 @@
 tests
+tsconfig.json
 .github
-.tsconfig.json
 .pnpm-lock.yaml
